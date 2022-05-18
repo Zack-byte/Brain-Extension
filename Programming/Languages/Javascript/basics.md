@@ -23,3 +23,9 @@
   - dynamic script creation (via eval)
   - object introspection
   - and source code recovery (programs can de-compile function bodies back into their source text)
+
+## Declarations
+  - JavaScript has three kinds of variable declarations
+    - **var**: declares a variable, optionally initializing it to a value
+    - **let**: declares a block-scoped, local variable, optionally initializing it to a value
+    - **const**: declares a block-scoped, read-only named constant
