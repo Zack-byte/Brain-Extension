@@ -75,3 +75,12 @@ is a CSS pre-processor that lets you use variables, mathematical operations, mix
 	- are like functions in other languages
 	- they return a value or set of values and can take parameters including default values
 	- SASS has functions too (but a mixin is not like a function) 
+
+## Server Side Rendering
+- Utilizing the server side technic in order to reduce application load and improve performance on mobile/low powered devices. 
+- You can prepare an application for server-side rendering by using the Angular CLI to run the Angular Universal tool, 
+- @nguniversal/express-engine schematic
+
+## Transpile
+- the translation process that transforms one version of JavaScript to another version; for example down-leveling ES 2015 to and older ES5 version.
+
