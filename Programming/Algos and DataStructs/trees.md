@@ -110,7 +110,7 @@ class Node {
   - **Adjacency Matrixes**
     - A matrix using either boolean values or 0's and 1's to represent connections between vertices.
     - In an undirected graph the adjacency matrix will be symmetric. In a directed graph it will not (necessarily be) 
-    - The same search algorithms (breadth-first, etc) will work on either List or martixes however it's important to note that matrixes are usually less efficient.
+    - The same search algorithms (breadth-first, etc) will work on either List or matrixes however it's important to note that matrixes are usually less efficient.
 
 ## Graph Search
   - Two most common ways are:
@@ -140,7 +140,7 @@ class Node {
 
 ## Breadth First Search(BFS)
 - BFS is a bit less intuitive. The main tripping point is the (false) assumption that BFS is recursive. It's not, instead it uses a queue. 
-- An iterative solution involving a queue ususally works best.
+- An iterative solution involving a queue usually works best.
 ```java
 void search(Node root):
   Queue queue = new Queue()
