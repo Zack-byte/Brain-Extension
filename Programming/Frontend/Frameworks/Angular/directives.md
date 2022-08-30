@@ -5,7 +5,7 @@ Simply Put, directives are prebuilt or custom baked "plugins" that can be utiliz
 
 ## Popular Directives
 1. ***ngIf** - dynamically renders the current element on the page depending on the result of the supplied boolean value.
-    ```javascript
+    ```typescript
         /** IN component.ts */
         const showContainer = true;
     ```
@@ -14,7 +14,7 @@ Simply Put, directives are prebuilt or custom baked "plugins" that can be utiliz
         <div *ngIf="showContainer">Show Me</div>
     ```
 2. ***ngFor** - Renders the specified element for each item in the supplied array.
-   ```javascript
+   ```typescript
    /** IN component.ts */
    const myArray = [{name: "Sam"}, {name: "Veronica"}];
    ```
@@ -30,7 +30,7 @@ Simply Put, directives are prebuilt or custom baked "plugins" that can be utiliz
     </div>
    ```
 3. **[ngClass]** - Adds and removes CSS classes based on supplied values.
- ```javascript
+ ```typescript
     /** IN component.ts */
     const isContainer = true;
  ``` 
@@ -50,7 +50,7 @@ Simply Put, directives are prebuilt or custom baked "plugins" that can be utiliz
         This will create a file <span style="background-color: grey">src/app/test.directive.ts</span> a test file <span style="background-color: grey">src/app/test.directive.spec.ts</span> and adds the directive to the project **AppModule**
     
     2. **Make Some Magic Happen** - next is were you come in as a dev. In the <span style="background-color: grey">"directive.ts"</span> file flesh out some logic to be applied whenever your directive is **USED** on an HTML element **AND** that element is **Rendered**.
-   ```javascript
+   ```typescript
    import { Directive, ElementRef } from '@angular/core';
 
    @Directive({
@@ -71,3 +71,33 @@ Simply Put, directives are prebuilt or custom baked "plugins" that can be utiliz
     <div style="background-color: white; padding: 10px">
         <mark>Test Text</mark>
     </div>
+
+## Utilizing HostListener
+Thought about moving on or going to sleep until I saw something quick and interesting, that is utilizing the <span style="background-color: grey">angular/core</span> **@HostListener** import. When you're creating a directive and in need of executing logic after an event is emitted on the source element, @HostListener is there for you. It's super simple and a single example should sum up not only its syntax but also its general usage (I'll come back and revise if I ever find otherwise :wink:).
+
+```typescript
+//** Of Course you would import like this. */
+import { HostListener } from 'angular/core'
+
+//** Then Implement in your directive like this. */
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+
+  constructor(private el: ElementRef) { }
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.highlight('yellow');
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.highlight('');
+  }
+
+  private highlight(color: string) {
+    this.el.nativeElement.style.backgroundColor = color;
+  }
+
+}
+```
