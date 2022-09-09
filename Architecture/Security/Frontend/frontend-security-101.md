@@ -1,3 +1,5 @@
+[[TOC]]
+
 # Frontend Security 101
 Total application security is only as good as the sum of its parts. And **YES** that also includes the sexiest part of any application...The Frontend :exclamation:. And nooo I'm not biased in the slightest :smirk:. All jokes aside the frontend is still definitely a place where a security first mindset should be taken place while developing your application. And yes this comes with exceptions, however for the case of these notes that's where we are headed.
 
