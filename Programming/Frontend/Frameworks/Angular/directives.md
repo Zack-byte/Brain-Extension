@@ -38,6 +38,9 @@ Simply Put, directives are prebuilt or custom baked "plugins" that can be utiliz
  <!-- Boolean Assertions can be utilized for clean inline class switching -->
  <div [ngClass]="isContainer == true ? 'container-class' : 'label-class'">
  </div>
+
+ <!-- As a list -->
+<div [ngClass]="['first', 'second']"></div>
  ```
 
 ## Custom Directives
