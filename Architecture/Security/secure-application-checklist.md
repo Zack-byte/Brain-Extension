@@ -157,7 +157,7 @@ Strong MFA comes in several forms, with the strongest including an authenticator
 
 [Azure Resource Manager overview](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview)
 
-[Azure Application Architecture Guid](https://docs.microsoft.com/en-us/azure/architecture/guide)
+[Azure Application Architecture Guide](https://docs.microsoft.com/en-us/azure/architecture/guide)
 
 [Azure Reference Architectures](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures)
 
