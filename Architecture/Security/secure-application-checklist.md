@@ -151,3 +151,30 @@ Strong MFA comes in several forms, with the strongest including an authenticator
 11. What specific risk or vulnerability am I addressing with this mitigation?
 
 
+### Resources
+
+[Get started guide for Azure developers](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide)
+
+[Azure Resource Manager overview](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview)
+
+[Azure Application Architecture Guid](https://docs.microsoft.com/en-us/azure/architecture/guide)
+
+[Azure Reference Architectures](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures)
+
+[Azure Resource Manager template best practices](https://docs.microsoft.com/en-us/azure/azure-resource-manager/template-best-practices)
+
+[App Service Documentation 1](https://docs.microsoft.com/en-us/azure/app-service)
+
+[App Service Documentation 2](https://docs.microsoft.com/en-us/azure/app-service/overview-compare)
+
+[App Service Documentation 3](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-auth-aad)
+
+[Azure DevOps Server Documentation](https://docs.microsoft.com/en-us/azure/devops/server)
+
+[Dangers of Violating SOLID Principles in C#](https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/may/csharp-best-practices-dangers-of-violating-solid-principles-in-csharp)
+
+
+
+
+
+
