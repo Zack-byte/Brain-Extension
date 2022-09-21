@@ -1,7 +1,7 @@
 # Deploying an Angular Application on App Engine
 These Notes cover a simple walkthrough of deploying an `Angular` application on Google Cloud's `App Engine` utilizing `Nginx`, `Docker` and `Cloud Build`.
 
-## Before Startings
+## Before Starting
 1. Select or Create a Google Cloud Project
 2. Enable the App Engine, Cloud Build, and Container Registry APIs.
 
@@ -130,7 +130,7 @@ http {
 }
 ```
 
-4. Add a `cloudbuild.yaml` file in the `nginx-hosting` folder, and copy the follwing code into the file:
+4. Add a `cloudbuild.yaml` file in the `nginx-hosting` folder, and copy the following code into the file:
 
 ```yaml
 steps:
