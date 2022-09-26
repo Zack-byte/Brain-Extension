@@ -1,0 +1,2 @@
+# Powershell Basics
+Don't have much time to elaborate. So short and sweet...Powershell is a `Scripting` Language. Developed by Microsoft to be Cross Platform and integrates with the .NET Development Platform. 
