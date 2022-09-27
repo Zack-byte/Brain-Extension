@@ -24,4 +24,76 @@ Probably one of the most thought provoking quotes in the preface for me ->
 15. `BPF`: summaries the BPF front ends: `BCC` and `bpftrace`
 16. `Case Study`: A systems performance case study from Netflix.
 
+### Tracing
+This book goes over the `BCC` and `bpftracing` tools as well as Linux's built in `Ftrace` tool. Windows also has tracing tools such as `Tracelog`, `Tracefmt`, `Tracepdb`, `Tracerpt`.
+
+### Typographic Conventions
+Conventions used in the book. **TODO: Come back and flesh out the table**
+
+
+## Chapter 1 Introduction
+Chapter Objectives:
+- Understand systems performance roles, activities, and challenges.
+- Understand the difference between observability, and experimental tools.
+- Develop a basic understanding of performance observability: statistics, profiling, flame graphs, tracing, static instrumentation, and dynamic instrumentation.
+- Learn the role of methodologies and the Linux 60-second checklist.
+
+### 1.1 Systems Performance
+System Performance is the study of the entire computer system, which includes all major software and hardware. As well as anything in the Data path (storage devices, application software) is included as well because it all effects performance.
+
+**Diagram your environment...it helps identify bottlenecks in the infrastructure**
+
+<b><i>fullstack</i></b> when speaking of systems performance means the entire software stack from the application down to metal, including system libraries, the kernel, and the hardware itself.
+
+### 1.2 Roles
+Systems Performance can be research or carried out by a variety of job roles. Engineers or teams can be component specific (database, application, ect...) or teams/Engineers can be put in place to test, monitor and improve performance over the entire scope.
+
+### 1.3 Activities
+The following is a list of activities that are also ideal steps in the life cycle of a software project from conception through development to production deployment.
+
+1. Setting performance objectives and performance modeling for a future product.
+2. Performance characterization of prototype software and hardware.
+3. Performance analysis of in-development products in a test environment.
+4. Non-regression testing for new product versions.
+5. Benchmarking product releases.
+6. Proof-of-concept testing in the target production environment.
+7. Performance tuning in production.
+8. Monitoring of running production software
+9. Performance analysis of production issues.
+10. Incident reviews for production issues.
+11. Performance tool development to enhance production analysis.
+
+steps `1` to `5` comprise `traditional` production development, regardless of the product intended for internal or external users.
+
+Performance engineering should ideally begin before any hardware is chosen or software is written: the first step should be to set objectives and create a performance model. 
+
+**With each step of the development process it can become progressively harder to fix performance issues that arise due to architectural decisions made earlier**
+
+Cloud computing provides new techniques for proof-of-concept testing (step 6) that encourage skipping the earlier steps (steps 1 to 5). 
+
+1. `Canary testing`: A technique that tests new software on a single instance with a fraction of the production workload.
+2. `Blue-Green Deployment`: A technique in which traffic is gradually moved to a new pool of instances while leaving the old pool online as a backup.
+
+These are `safe to fail` options that allow testing of new equipment and software in production without prior environment testing.
+
+### 1.4 Perspectives
+Performance roles can be viewed from different perspectives.
+Two perspectives are...
+1. `Workload analysis`: Commonly employed by Application developers who are responsible for the delivered performance of the workload. 
+2. `Resource analysis`: Commonly employed by System Admins who are responsible for the system resources.
+
+### 1.5 Performance is Challenging
+Systems performance is challenging because it is subjective, it is complex, there may not be a single root cause, and it often involves multiple issues.
+
+#### 1.5.1 Subjectivity
+Tech disciplines tend to be <i>objective</i> A.K.A <i>black or white</i>. A software bug for example tends to be fixed or not fixed, present or absent. 
+
+When it comes to performance however it is often <i>subjective</i>. To make things harder it may not even be clear that there even is an issue to begin with. "bad" performance can be "good" performance to someone else.
+
+#### 1.5.2
+
+
+
+
+
 
